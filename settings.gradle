@@ -1,0 +1,5 @@
+include ':aspect-plugin'
+include ':aspect-runtime'
+include ':app'
+include ':maven-local'
+rootProject.name = "AspectJ"
