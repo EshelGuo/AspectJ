@@ -1,4 +1,4 @@
-package script.android.aspect;
+package script.android.aspect.trace;
 
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
@@ -13,10 +13,10 @@ import org.aspectj.lang.reflect.MethodSignature;
 public class TraceAspect {
 
   private static final String POINTCUT_METHOD =
-      "execution(@script.android.aspect.DebugTrace * *(..))";
+      "execution(@script.android.aspect.trace.DebugTrace * *(..))";
 
   private static final String POINTCUT_CONSTRUCTOR =
-      "execution(@script.android.aspect.DebugTrace *.new(..))";
+      "execution(@script.android.aspect.trace.DebugTrace *.new(..))";
 
   @Pointcut(POINTCUT_METHOD)
   public void methodAnnotatedWithDebugTrace() {}

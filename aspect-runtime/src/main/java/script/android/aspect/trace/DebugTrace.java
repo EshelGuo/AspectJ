@@ -1,4 +1,4 @@
-package script.android.aspect;
+package script.android.aspect.trace;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
